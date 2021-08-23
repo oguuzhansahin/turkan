@@ -5,7 +5,7 @@ from credentials import *
 from utils import (authentication_api,
                    call_pretrained_model,
                    extract_new,
-                   find_question_link,                               
+                   find_tweet_text_and_link,                               
 )
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def predict():
             tweet_info = api.get_status(tweet_id)
             tweet_info = " ".join(tweet_info.text.split("\n"))
                 
-            question,link = find_question_link(tweet_info)
+            question,link = find_tweet_text_and_link(tweet_info)
             print(question)
             print(link)
         

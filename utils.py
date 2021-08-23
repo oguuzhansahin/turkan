@@ -44,10 +44,10 @@ def extract_new(url):
     return text
 
 
-def find_question_link(tweet):
+def find_tweet_text_and_link(tweet):
     
     match = re.search(r'(https?://\S+)', tweet)
-    question, link = tweet[:match.span()[0]],tweet[match.span()[0]:match.span()[1]]
+    tweet_text, link = tweet[:match.span()[0]],tweet[match.span()[0]:match.span()[1]]
     
-    return question,link
+    return tweet_text,link
 
