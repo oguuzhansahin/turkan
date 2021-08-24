@@ -1,6 +1,3 @@
-<h3 align="center">
-    <p> Türkan </p>
-</h3>
 
 <p align="center">
   <img src="logo/turkan-logo.png" />
