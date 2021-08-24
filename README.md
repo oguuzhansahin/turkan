@@ -1,4 +1,4 @@
-
+<img src="logo/turkan-logo.png" width="120" />
 <p align="center">
   <img src="logo/turkan-logo.png" />
 </p>
