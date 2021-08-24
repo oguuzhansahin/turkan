@@ -26,7 +26,10 @@ def predict():
         prediction_text = ""
 
         tweet_link = request.form['tweet_link']
+        print("tweet link: ", tweet_link)
+
         tweet_id = tweet_link.split("/")[-1]
+        print("tweet id : ", tweet_id)
         try:
             tweet_info = api.get_status(tweet_id)
             tweet_info = " ".join(tweet_info.text.split("\n"))
