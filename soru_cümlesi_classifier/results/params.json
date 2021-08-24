@@ -1,0 +1,1 @@
+{"input": "soru_cumlesi_classifier/data/train.txt", "epoch": 100, "dim": 50, "wordNgrams": 2}
